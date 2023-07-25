@@ -5,14 +5,14 @@
 
   <div class="form-group">
     <label for="user">E-mail:</label>
-    <input type="email" class="form-control" id="user" placeholder="Digite o email" required>
+    <input type="email" class="form-control" [(ngModel)]="usuario.login"  id="login" name="login" placeholder="Digite o email" required>
   </div>
 
   <div class="form-group">
     <label for="user">Senha:</label>
-    <input type="password" class="form-control" id="senha" placeholder="Digite a senha" required>
+    <input type="password" class="form-control"  [(ngModel)]="usuario.senha" id="senha" name="senha" placeholder="Digite a senha" required>
   </div>
 
-  <button type="button" class="btn btn-primary">Login</button>
+  <button type="button" (click)="login()"  class="btn btn-primary">Login</button>
 </form>
 
